@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Book</title>
-  <meta name="description" content="Book professionnel – portfolio personnel" />
+  <title>Eric Monnereau – Comédien</title>
+  <meta name="description" content="Eric Monnereau, comédien et figurant – book professionnel" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f7f7;
-      color: #222;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background: #0e0e0e;
+      color: #eaeaea;
+      line-height: 1.7;
     }
     header {
       min-height: 100vh;
@@ -19,20 +20,28 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(120deg, #111, #444);
-      color: white;
+      background: radial-gradient(circle at top, #222, #000);
       text-align: center;
       padding: 2rem;
     }
-    header h1 { font-size: 3rem; margin-bottom: 1rem; }
-    header p { font-size: 1.2rem; max-width: 600px; }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 600px;
+    }
 
     nav {
       position: sticky;
       top: 0;
-      background: white;
+      background: rgba(0,0,0,0.9);
       padding: 1rem;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #222;
       z-index: 10;
     }
     nav ul {
@@ -43,105 +52,126 @@
     }
     nav a {
       text-decoration: none;
-      color: #222;
-      font-weight: bold;
+      color: #eaeaea;
+      font-weight: 300;
+      letter-spacing: 1px;
     }
 
     section {
-      padding: 4rem 2rem;
+      padding: 5rem 2rem;
       max-width: 1100px;
       margin: auto;
     }
 
     h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
       text-align: center;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
     }
 
     .card {
-      background: white;
-      border-radius: 8px;
+      background: #111;
+      border-radius: 6px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     .card img {
       width: 100%;
-      height: 250px;
+      height: 360px;
       object-fit: cover;
+      filter: grayscale(100%);
     }
 
     .card .content {
       padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .profil {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .profil span {
+      display: block;
+      margin-bottom: 0.6rem;
     }
 
     footer {
-      background: #111;
-      color: white;
+      background: #000;
+      color: #777;
       text-align: center;
       padding: 2rem;
+      font-size: 0.8rem;
     }
 
     @media (max-width: 600px) {
-      header h1 { font-size: 2.2rem; }
+      header h1 { font-size: 2.4rem; }
     }
   </style>
 </head>
 <body>
 
   <header id="accueil">
-    <h1>Ton Nom</h1>
-    <p>Photographe / Modèle / Artiste / Créatif — phrase courte de présentation</p>
+    <h1>Eric Monnereau</h1>
+    <p>Comédien & Figurant — présence mature, regard marqué, univers cinéma</p>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#profil">Profil</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
+  <section id="photos">
+    <h2>Photos casting</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://via.placeholder.com/600x400" alt="Projet 1">
-        <div class="content">Projet / Shooting 1</div>
+        <img src="https://via.placeholder.com/600x800" alt="Portrait">
+        <div class="content">Portrait</div>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/600x400" alt="Projet 2">
-        <div class="content">Projet / Shooting 2</div>
+        <img src="https://via.placeholder.com/600x800" alt="Plein pied">
+        <div class="content">Plein pied</div>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/600x400" alt="Projet 3">
-        <div class="content">Projet / Shooting 3</div>
+        <img src="https://via.placeholder.com/600x800" alt="Noir et blanc">
+        <div class="content">Noir & Blanc</div>
       </div>
     </div>
   </section>
 
-  <section id="apropos">
-    <h2>À propos</h2>
-    <p style="max-width:700px;margin:auto;text-align:center;">
-      Présente-toi ici : ton parcours, ton univers, ton style, tes expériences.
-    </p>
+  <section id="profil">
+    <h2>Profil</h2>
+    <div class="profil">
+      <span><strong>Âge :</strong> 62 ans</span>
+      <span><strong>Taille :</strong> 1,73 m</span>
+      <span><strong>Langues :</strong> Français, notions d’anglais et d’italien</span>
+      <span><strong>Localisation :</strong> France</span>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p style="text-align:center;">Email : contact@email.com</p>
-    <p style="text-align:center;">Instagram / Behance / Site pro</p>
+    <p style="text-align:center;">Contact direct ou agent — email à renseigner</p>
   </section>
 
   <footer>
-    <p>© 2026 — Ton Nom</p>
+    <p>© 2026 — Eric Monnereau</p>
   </footer>
 
 </body>
