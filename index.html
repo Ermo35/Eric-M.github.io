@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Book</title>
+  <meta name="description" content="Book professionnel – portfolio personnel" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #111, #444);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 1rem; }
+    header p { font-size: 1.2rem; max-width: 600px; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 1rem;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="accueil">
+    <h1>Ton Nom</h1>
+    <p>Photographe / Modèle / Artiste / Créatif — phrase courte de présentation</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="Projet 1">
+        <div class="content">Projet / Shooting 1</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="Projet 2">
+        <div class="content">Projet / Shooting 2</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="Projet 3">
+        <div class="content">Projet / Shooting 3</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p style="max-width:700px;margin:auto;text-align:center;">
+      Présente-toi ici : ton parcours, ton univers, ton style, tes expériences.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">Email : contact@email.com</p>
+    <p style="text-align:center;">Instagram / Behance / Site pro</p>
+  </section>
+
+  <footer>
+    <p>© 2026 — Ton Nom</p>
+  </footer>
+
+</body>
+</html>
