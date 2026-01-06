@@ -88,6 +88,17 @@
       height: 360px;
       object-fit: cover;
       filter: grayscale(100%);
+      transition: all 0.5s ease;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card img:hover {
+      height: 600px;
+      transform: scale(1.05);
+      z-index: 5;
+      filter: grayscale(0%); /* couleur au survol */
     }
 
     .card .content {
@@ -167,7 +178,7 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p style="text-align:center;">Contact direct ou agent — email à renseigner</p>
+    <p style="text-align:center;">Email : <a href="mailto:eric.monnereau@email.com" style="color:#eaeaea;">eric.monnereau@email.com</a></p>
   </section>
 
   <footer>
